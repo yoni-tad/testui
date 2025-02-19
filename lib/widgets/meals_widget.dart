@@ -19,15 +19,15 @@ class MealsWidget extends StatelessWidget {
           !isFirst ? Container(
             width: 320.w,
             height: 1.h,
-            color: Color(0xff6969691A),
-          ) : SizedBox(),
+            color: const Color(0xff6969691A),
+          ) : const SizedBox(),
           SizedBox(
             height: 20.h,
           ),
           Stack(
             children: [
               ClipRRect(
-                borderRadius: BorderRadius.circular(5),
+                borderRadius: BorderRadius.circular(5.r),
                 child: Image.asset(
                   imageAddress,
                   fit: BoxFit.cover,
@@ -43,13 +43,13 @@ class MealsWidget extends StatelessWidget {
                   height: 24.h,
                   decoration: BoxDecoration(
                     color: Colors.white,
-                    borderRadius: BorderRadius.circular(5),
+                    borderRadius: BorderRadius.circular(5.r),
                   ),
                   child: Center(
                     child: Icon(
                       Icons.favorite,
                       size: 11.5.w,
-                      color: Color(0xffFF6079),
+                      color: const Color(0xffFF6079),
                     ),
                   ),
                 ),
@@ -64,7 +64,7 @@ class MealsWidget extends StatelessWidget {
             style: GoogleFonts.montserrat(
               fontWeight: FontWeight.w600,
               fontSize: 12.sp,
-              color: Color(0xff191919),
+              color: const Color(0xff191919),
             ),
           ),
           SizedBox(
@@ -88,7 +88,7 @@ class MealsWidget extends StatelessWidget {
                     style: GoogleFonts.montserrat(
                       fontWeight: FontWeight.w500,
                       fontSize: 10.sp,
-                      color: Color(0xff3A4750),
+                      color: const Color(0xff3A4750),
                     ),
                   ),
                 ],
@@ -99,7 +99,7 @@ class MealsWidget extends StatelessWidget {
               Container(
                 height: 8.h,
                 width: 1.w,
-                color: Color(0xff707070),
+                color: const Color(0xff707070),
               ),
               SizedBox(
                 width: 9.5.w,
@@ -120,7 +120,7 @@ class MealsWidget extends StatelessWidget {
                     style: GoogleFonts.montserrat(
                       fontWeight: FontWeight.w500,
                       fontSize: 10.sp,
-                      color: Color(0xff3A4750),
+                      color: const Color(0xff3A4750),
                     ),
                   ),
                 ],

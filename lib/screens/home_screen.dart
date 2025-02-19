@@ -13,8 +13,8 @@ class HomeScreen extends StatelessWidget {
       backgroundColor: Colors.white,
       appBar: AppBar(
         backgroundColor: Colors.white,
-        leading: Padding(
-          padding: const EdgeInsets.all(28),
+        leading: const Padding(
+          padding: EdgeInsets.all(28),
           child: Icon(
             Icons.arrow_back_ios,
           ),
@@ -37,7 +37,7 @@ class HomeScreen extends StatelessWidget {
                       height: 38.h,
                       decoration: BoxDecoration(
                         color: Colors.black,
-                        borderRadius: BorderRadius.circular(5),
+                        borderRadius: BorderRadius.circular(5.r),
                       ),
                       child: Center(
                         child: Text(
@@ -55,8 +55,8 @@ class HomeScreen extends StatelessWidget {
                       width: 150.w,
                       height: 38.h,
                       decoration: BoxDecoration(
-                        color: Color(0xff6969691A).withOpacity(0.1),
-                        borderRadius: BorderRadius.circular(5),
+                        color: const Color(0xff6969691A).withOpacity(0.1),
+                        borderRadius: BorderRadius.circular(5.r),
                       ),
                       child: Center(
                         child: Text(
@@ -85,22 +85,22 @@ class HomeScreen extends StatelessWidget {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => DetailScreen(),
+                          builder: (context) => const DetailScreen(),
                         ),
                       );
                     },
-                    child: MealsWidget(
+                    child: const MealsWidget(
                       imageAddress: 'assets/images/img-1.png',
                       mealTitle: 'Green beans, tomatoes, eggs',
                       isFirst: true,
                     ),
                   ),
-                  MealsWidget(
+                  const MealsWidget(
                     imageAddress: 'assets/images/img-2.png',
                     mealTitle: 'Healthy balanced vegetarien food',
                     isFirst: false,
                   ),
-                  MealsWidget(
+                  const MealsWidget(
                     imageAddress: 'assets/images/img-3.png',
                     mealTitle: 'Ketogenic/paleo diet, fried eggs, salmon',
                     isFirst: false,

@@ -36,7 +36,7 @@ class DetailScreen extends StatelessWidget {
                               onTap: () {
                                 Navigator.pop(context);
                               },
-                              child: Icon(
+                              child: const Icon(
                                 Icons.arrow_back_ios,
                                 color: Colors.white,
                               ),
@@ -46,13 +46,13 @@ class DetailScreen extends StatelessWidget {
                               height: 18.54.h,
                               decoration: BoxDecoration(
                                 color: Colors.white,
-                                borderRadius: BorderRadius.circular(5),
+                                borderRadius: BorderRadius.circular(5.r),
                               ),
                               child: Center(
                                 child: Icon(
                                   Icons.favorite,
                                   size: 11.w,
-                                  color: Color(0xffFF6079),
+                                  color: const Color(0xffFF6079),
                                 ),
                               ),
                             ),
@@ -65,11 +65,11 @@ class DetailScreen extends StatelessWidget {
                 Expanded(
                   child: SingleChildScrollView(
                     child: Container(
-                      decoration: const BoxDecoration(
-                        color: Color(0xffFCFCFC),
+                      decoration: BoxDecoration(
+                        color: const Color(0xffFCFCFC),
                         borderRadius: BorderRadius.only(
-                          topLeft: Radius.circular(10),
-                          topRight: Radius.circular(10),
+                          topLeft: Radius.circular(10.r),
+                          topRight: Radius.circular(10.r),
                         ),
                       ),
                       child: Padding(
@@ -90,7 +90,7 @@ class DetailScreen extends StatelessWidget {
                                       style: GoogleFonts.montserrat(
                                         fontWeight: FontWeight.w600,
                                         fontSize: 12.sp,
-                                        color: Color(0xff3A4750),
+                                        color: const Color(0xff3A4750),
                                       ),
                                     ),
                                     SizedBox(
@@ -101,7 +101,7 @@ class DetailScreen extends StatelessWidget {
                                       style: GoogleFonts.montserrat(
                                         fontWeight: FontWeight.w600,
                                         fontSize: 14.sp,
-                                        color: Color(0xff3A4750),
+                                        color: const Color(0xff3A4750),
                                       ),
                                     ),
                                   ],
@@ -116,7 +116,7 @@ class DetailScreen extends StatelessWidget {
                                       style: GoogleFonts.montserrat(
                                         fontWeight: FontWeight.w600,
                                         fontSize: 12.sp,
-                                        color: Color(0xff3A4750),
+                                        color: const Color(0xff3A4750),
                                       ),
                                     ),
                                     SizedBox(
@@ -127,7 +127,7 @@ class DetailScreen extends StatelessWidget {
                                       style: GoogleFonts.montserrat(
                                         fontWeight: FontWeight.w600,
                                         fontSize: 14.sp,
-                                        color: Color(0xff3A4750),
+                                        color: const Color(0xff3A4750),
                                       ),
                                     ),
                                   ],
@@ -142,7 +142,7 @@ class DetailScreen extends StatelessWidget {
                                       style: GoogleFonts.montserrat(
                                         fontWeight: FontWeight.w600,
                                         fontSize: 12.sp,
-                                        color: Color(0xff3A4750),
+                                        color: const Color(0xff3A4750),
                                       ),
                                     ),
                                     SizedBox(
@@ -153,7 +153,7 @@ class DetailScreen extends StatelessWidget {
                                       style: GoogleFonts.montserrat(
                                         fontWeight: FontWeight.w600,
                                         fontSize: 14.sp,
-                                        color: Color(0xff3A4750),
+                                        color: const Color(0xff3A4750),
                                       ),
                                     ),
                                   ],
@@ -170,7 +170,7 @@ class DetailScreen extends StatelessWidget {
                                 style: GoogleFonts.bebasNeue(
                                   fontWeight: FontWeight.w400,
                                   fontSize: 22.sp,
-                                  color: Color(0xff191919),
+                                  color: const Color(0xff191919),
                                 ),
                               ),
                             ),
@@ -184,7 +184,7 @@ class DetailScreen extends StatelessWidget {
                                 style: GoogleFonts.montserrat(
                                   fontWeight: FontWeight.w400,
                                   fontSize: 12.sp,
-                                  color: Color(0xFF3A4750),
+                                  color: const Color(0xFF3A4750),
                                 ),
                               ),
                             ),
@@ -194,7 +194,7 @@ class DetailScreen extends StatelessWidget {
                             Container(
                               width: 320.w,
                               height: 1.h,
-                              color: Color(0xff6969691A).withOpacity(0.1),
+                              color: const Color(0xff6969691A).withOpacity(0.1),
                             ),
                             SizedBox(
                               height: 16.h,
@@ -204,7 +204,7 @@ class DetailScreen extends StatelessWidget {
                               style: GoogleFonts.montserrat(
                                 fontWeight: FontWeight.w700,
                                 fontSize: 16.sp,
-                                color: Color(0xff191919),
+                                color: const Color(0xff191919),
                               ),
                             ),
                             SizedBox(
@@ -212,7 +212,7 @@ class DetailScreen extends StatelessWidget {
                             ),
                             Column(
                               children: [
-                                MealCard(
+                                const MealCard(
                                   title:
                                       'Tortilla wrap with falafel and fresh salad',
                                   imageAddress: 'assets/images/img-4.png',
@@ -224,10 +224,10 @@ class DetailScreen extends StatelessWidget {
                                   child: Container(
                                     width: 320.w,
                                     height: 1.h,
-                                    color: Color(0xff6969691A).withOpacity(0.1),
+                                    color: const Color(0xff6969691A).withOpacity(0.1),
                                   ),
                                 ),
-                                MealCard(
+                                const MealCard(
                                   title: 'Healthy vegan salad of vegetables',
                                   imageAddress: 'assets/images/img-2.png',
                                 ),
@@ -238,10 +238,10 @@ class DetailScreen extends StatelessWidget {
                                   child: Container(
                                     width: 320.w,
                                     height: 1.h,
-                                    color: Color(0xff6969691A).withOpacity(0.1),
+                                    color: const Color(0xff6969691A).withOpacity(0.1),
                                   ),
                                 ),
-                                MealCard(
+                                const MealCard(
                                   title:
                                       'Ketogenic/paleo diet, fried eggs, salmon',
                                   imageAddress: 'assets/images/img-1.png',
@@ -265,7 +265,7 @@ class DetailScreen extends StatelessWidget {
                 height: 47.h,
                 decoration: BoxDecoration(
                   color: Colors.white,
-                  borderRadius: BorderRadius.circular(15),
+                  borderRadius: BorderRadius.circular(15.r),
                 ),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
@@ -286,7 +286,7 @@ class DetailScreen extends StatelessWidget {
                           style: GoogleFonts.montserrat(
                             fontWeight: FontWeight.w600,
                             fontSize: 12.sp,
-                            color: Color(0xff191919),
+                            color: const Color(0xff191919),
                           ),
                         ),
                       ],
@@ -297,7 +297,7 @@ class DetailScreen extends StatelessWidget {
                     Container(
                       height: 12.h,
                       width: 1.w,
-                      color: Color(0xff707070),
+                      color: const Color(0xff707070),
                     ),
                     SizedBox(
                       width: 30.w,
@@ -318,7 +318,7 @@ class DetailScreen extends StatelessWidget {
                           style: GoogleFonts.montserrat(
                             fontWeight: FontWeight.w600,
                             fontSize: 12.sp,
-                            color: Color(0xff191919),
+                            color: const Color(0xff191919),
                           ),
                         ),
                       ],

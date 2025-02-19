@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:testui/screens/detail_screen.dart';
 import 'package:testui/widgets/meals_widget.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -79,10 +80,20 @@ class HomeScreen extends StatelessWidget {
               ),
               Column(
                 children: [
-                  MealsWidget(
-                    imageAddress: 'assets/images/img-1.png',
-                    mealTitle: 'Green beans, tomatoes, eggs',
-                    isFirst: true,
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => DetailScreen(),
+                        ),
+                      );
+                    },
+                    child: MealsWidget(
+                      imageAddress: 'assets/images/img-1.png',
+                      mealTitle: 'Green beans, tomatoes, eggs',
+                      isFirst: true,
+                    ),
                   ),
                   MealsWidget(
                     imageAddress: 'assets/images/img-2.png',
